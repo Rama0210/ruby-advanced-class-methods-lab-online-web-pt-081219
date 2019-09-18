@@ -1,4 +1,4 @@
-class Song
+ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
@@ -10,4 +10,9 @@ class Song
     self.class.all << self
   end
 
+end
+
+def create
+song = Song.create 
+Song.all.include?(song)
 end
